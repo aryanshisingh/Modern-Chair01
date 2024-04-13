@@ -209,7 +209,7 @@ label.color-1{
 }
 
 .back-color.chair-4 {
-    background-image: linear-gradient(196deg, #232425, #6bb2ef);
+    background-image: linear-gradient(196deg, #e1e7ed, #2f94ed);
     opacity: 0;
 }
 
@@ -240,6 +240,13 @@ label.color-1{
     text-align: left;
 }
 
+.info{
+  position: relative;
+  margin-left: 500px;
+  z-index: 10;
+  display: block;
+  text-align: left;
+}
 .title{
     font-weight: 700;
     text-transform: uppercase; 
