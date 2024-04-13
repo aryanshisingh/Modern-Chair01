@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins" , sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+    background-color: #1f2029;
+    min-height: 100vh;
+    overflow: none;
+}
+
+p{
+    font-size: 16px;
+}
+
+.section-fluid-main{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.section{
+    max-width: calc(100% - 40px);
+    position: relative;
+    width: 860px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[type="radio"]:checked'
+[type="radio"]:not(:checked){
+    visibility:hidden;
+    position: absolute;
+}
+
+.color-btn:checked + label,
+.color-btn:not(:checked) + label{
+    position: relative;
+    height: 40px;
+    border: none;
+    transition: all 200ms linear;
+    cursor: pointer;
+    width: 40px;
+    overflow: hidden;
+    color: #ffeba7;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+    z-index: 10;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+}
+
+.color-btn:checked + label{
+    border: #434343;
+    transform: scale(1.1);
+}
+
+label.first-color{
+    /* margin-left: 500px; */
+    background-image: url(image/chair1.png);
+}
+label.color-2{
+    background-image: url(image/chair2.png);
+}
+label.color-3{
+    background-image: url(image/chair3.png);
+}
+label.color-4{
+    background-image: url(image/chair4.png);
+}
+label.color-5{
+    background-image: url(image/chair5.png);
+}
+label.color-6{
+    background-image: url(image/chair6.png);
+}
+
+.img-wrap{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 500px;
+    height: 410px;
+    display: inline-block;
+    z-index: 9;
+    transition: all 500ms linear;
+    transition-delay: 100ms;
+    background-size: 100%;
+    background-image: url("image/chair1.png");
+    opacity: 0;
+}
+
+.for-color-1:checked ~ .img-wrap.chair-1{
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.img-wrap.chair-2{
+    background-image: url("image/chair2.png");
+}
+
+.for-color-2:checked ~ .img-wrap.chair-2 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  .img-wrap.chair-3 {
+    background-image: url("images/chair3.png");
+  }
+  .for-color-3:checked ~ .img-wrap.chair-3 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  .img-wrap.chair-4 {
+    background-image: url("images/chair4.png");
+  }
+  .for-color-4:checked ~ .img-wrap.chair-4 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  .img-wrap.chair-5 {
+    background-image: url("images/chair5.png");
+  }
+  .for-color-5:checked ~ .img-wrap.chair-5 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  .img-wrap.chair-6 {
+    background-image: url("images/chair6.png");
+  }
+  .for-color-6:checked ~ .img-wrap.chair-6 {
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
